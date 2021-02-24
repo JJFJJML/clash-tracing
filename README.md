@@ -68,7 +68,9 @@ debian 10安装详细说明
 		a. CLASH_HOST: '10.10.10.3:9090'       # clash IP以及端口
 		b. CLASH_TOKEN: '123456'          #web-UI密码
 		
-	6. 启动：docker-compose up-d
+	6. 修改grafana权限
+	   chown -R 472:472 /root/clash-tracing/grafana
+           启动：docker-compose up -d
 	
 	7. grafana后台地址：
 		a. Clash IP：3000
