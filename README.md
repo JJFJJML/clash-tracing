@@ -44,8 +44,8 @@ debian 10安装详细说明
 		如果出现以上所示的错误信息，则表示 Python 的替代版本尚未被 update-alternatives 命令识别。想解决这个问题，我们需要更新一下替代列表，将 python2.7 和 python3.7 放入其  中，执行以下命令：
 		update-alternatives --install /usr/bin/python python /usr/bin/python2.7 1
 		update-alternatives: using /usr/bin/python2.7 to provide /usr/bin/python (python) in auto mode
-		update-alternatives --install /usr/bin/python python /usr/bin/python3.5 2
-		update-alternatives: using /usr/bin/python3.5 to provide /usr/bin/python (python) in auto mode
+		update-alternatives --install /usr/bin/python python /usr/bin/python3.7 2
+		update-alternatives: using /usr/bin/python3.7 to provide /usr/bin/python (python) in auto mode
 		注意：命令最后面的数字是序号
 		b. python --version 检查当前python版本
 		
