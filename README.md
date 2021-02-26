@@ -14,6 +14,7 @@ An example of a clash tracing exporter API.
 
 
 基于debian 10安装详细笔记
+
 1. 安装docker
  	
 	a. 由于 apt 源使用 HTTPS 以确保软件下载过程中不被篡改。添加HTTPS传输的软件包以及 CA 证书
