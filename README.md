@@ -15,7 +15,8 @@ An example of a clash tracing exporter API.
 
 基于debian 10安装详细笔记
 1. 安装docker
- 	a. 由于 apt 源使用 HTTPS 以确保软件下载过程中不被篡改。添加HTTPS传输的软件包以及 CA 证书
+ 	
+	a. 由于 apt 源使用 HTTPS 以确保软件下载过程中不被篡改。添加HTTPS传输的软件包以及 CA 证书
 	
 	b. sudo apt-get update
 		sudo apt-get install \
@@ -42,6 +43,7 @@ An example of a clash tracing exporter API.
 	
 	
 2. 系统关联python 3.7     #https://www.quyu.net/info/1549.html
+	
 	a. 先列出可用python版本
 	        update-alternatives --list python
 		出现错误：update-alternatives: error: no alternatives for python
@@ -71,19 +73,23 @@ An example of a clash tracing exporter API.
 	   pip --version
 		
 4. pip 安装 docker-compose
+	
 	pip install docker-compose
 		
 5. 修改docker-compose.yaml
+	
 	a. CLASH_HOST: '10.10.10.3:9090'       # clash IP以及端口
 	
 	b. CLASH_TOKEN: '123456'          #web-UI密码
 
 6. 修改grafana权限
+	
 	chown -R 472:472 /root/clash-tracing/grafana
 		
 7. 启动：docker-compose up -d
 	
 8. grafana后台地址：
+	
 	a. Clash IP：3000
 	
 	b. 添加数据库 influxdb
